@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>University Events — Sign In</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/login.css">
+	</head>
+	<body>
+		
+		<div class="container" role="main">
+			<div class="center left">
+				<h1>Welcome back</h1>
+				<p class="lead">Sign in to manage your events, attendees and schedules from one place.</p>
+
+				<ul class="features">
+					<li><span class="dot a"></span><span class="muted">Easy event planning. </span></li>
+					<li><span class="dot b"></span><span class="muted">Reserve hall spaces within one minute.</span></li>
+					<li><span class="dot c"></span><span class="muted">Live updates for every event.</span></li>
+				</ul>
+
+				<p class="small" style="margin-top:18px;opacity:0.95">A vibrant, university-oriented design to help clubs and organizers run better events.</p>
+				
+			</div>
+
+			<div class="right">
+			
+				<div class="portal-switch" role="tablist" aria-label="Portal selector">
+					<button type="button" data-role="student" class="active">Student</button>
+					<button type="button" data-role="admin">Admin</button>
+				</div>
+				<div class="card" aria-labelledby="signin">
+					<h1 id="signin" style="margin:0 0 8px">Sign in</h1>
+					<form id="loginForm" onsubmit="return handleSubmit(event)">
+						<div class="role-toggle" role="tablist" aria-label="Select portal">
+							<label style="display:none"><input type="radio" name="role" value="student" checked> Student</label>
+							<label style="display:none"><input type="radio" name="role" value="admin"> Admin</label>
+						</div>
+						<div class="form-row">
+							<label for="email">E-mail</label>
+							<input id="email" name="email" type="email" placeholder="abc@gmail.com" required />
+						</div>
+						<div class="form-row pw-wrap">
+							<label for="password">Password</label>
+							<input id="password" name="password" type="password" placeholder="Enter password" required />
+							<button type="button" class="pw-toggle" aria-label="Toggle password visibility" onclick="togglePassword()">Show</button>
+						</div>
+						<div class="controls">
+							<label style="display:flex;align-items:center;gap:8px"><input id="remember" type="checkbox"/> Remember me</label>
+							<a class="muted" href="#" onclick="alert('Password reset flow — not implemented in this demo.')">Forgot?</a>
+						</div>
+
+						<div style="display:flex;gap:10px;align-items:center">
+							<button type="submit" class="btn">Sign in</button>
+						</div>
+
+						<p class="small" style="margin-top:24px;font-size:15px;">Don't have an account? <a href="#" onclick="signUp()" style="color:#0a0b0b;text-decoration:underline">Sign up</a></p>
+						</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/login.js"></script>
+	</body>
+</html>
+

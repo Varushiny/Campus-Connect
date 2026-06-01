@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Show Events — University Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/showevents.css">
+</head>
+<body>
+  <div class="page">
+    <div class="page-header">
+      <div class="brand">
+        <span class="logo">UniEvent</span>
+        <p>Campus events made easy, colorful, and original.</p>
+      </div>
+      <button type="button" onclick="location.href='login.html'">Back to Login</button>
+    </div>
+    <section class="hero">
+      <div class="hero-text">
+        <div class="hero-tag">✨ Event showcase</div>
+        <h1>Find the events summary easily.</h1>
+        <p>Discover a modern event display with search, live stats, featured highlights, and a strong page identity that feels complete and professional.</p>
+        
+      </div>
+      <div class="hero-visual">
+        <img src="https://webxlearner.com/wp-content/uploads/2025/07/project_planing_in_event_management_system-1024x683.webp" alt="Event management planning illustration">
+      </div>
+    </section>
+    <div class="feature-row">
+      <article class="small-card">
+        <h3>Instant search</h3>
+        <p>Type to filter events by title, location, or description in real time.</p>
+      </article>
+      <article class="small-card">
+        <h3>Bright stats</h3>
+        <p>See totals, today’s events, and upcoming schedules at a glance.</p>
+      </article>
+      <article class="small-card">
+        <h3>Original style</h3>
+        <p>Unique gradients, polished cards, and a strong landing page experience.</p>
+      </article>
+    </div>
+    <div class="content">
+      <section class="card">
+        <h2>Event dashboard</h2>
+        <div class="event-counts">
+          <div class="count-card"><strong id="totalCount">0</strong><span>All scheduled events</span></div>
+          <div class="count-card"><strong id="todayCount">0</strong><span>Events happening today</span></div>
+          <div class="count-card"><strong id="upcomingCount">0</strong><span>Upcoming events</span></div>
+        </div>
+      </section>
+      <section class="card">
+        <h2>What this page shows</h2>
+        <p style="margin:0;color:var(--muted);line-height:1.8;">This dashboard gives you a polished event overview with quick stats, live search, and a clean event list. It’s built to feel like a real event website, so your page looks original and professional.</p>
+      </section>
+    </div>
+    <section class="card events-section">
+      <div class="event-header">
+        <div>
+          <h2>Your events</h2>
+          <p>Search through your events and keep your schedule visible.</p>
+        </div>
+        <div class="search-row">
+          <input id="searchInput" type="search" placeholder="Search by title, location, or description" oninput="render()">
+        </div>
+      </div>
+      <div id="eventsList" class="events-list"></div>
+    </section>
+  </div>
+  <script src="../js/showevents.js"></script>
+</body>
+</html>
+

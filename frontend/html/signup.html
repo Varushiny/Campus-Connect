@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up — University Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <span class="pill">Event management</span>
+      <h1>Join the easiest way to manage your university events.</h1>
+      <p>Sign up with a beautifully designed page that feels modern, polished, and ready for event planning. No extra image block, just a clean, striking signup experience.</p>
+      <div class="hero-features">
+        <div class="feature-card"><strong>Fast setup</strong>Fill out the form and get started right away.</div>
+        <div class="feature-card"><strong>Modern UI</strong>Glassmorphism styling with strong colors and smooth shadows.</div>
+        <div class="feature-card"><strong>Secure form</strong>Designed to look professional and trusted.</div>
+        <div class="feature-card"><strong>Mobile-ready</strong>Responsive layout looks great on all screen sizes.</div>
+      </div>
+    </section>
+    <section class="form-card">
+      <h2>Create your account</h2>
+      <form id="signupForm" onsubmit="return handleSignup(event)">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="abc@gmail.com" required />
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Choose a password" required />
+        </div>
+        <div class="form-row">
+          <label for="confirm">Confirm password</label>
+          <input id="confirm" name="confirm" type="password" placeholder="Re-enter password" required />
+        </div>
+        <button type="submit" class="btn">Sign up</button>
+      </form>
+      <p class="hint">Already have an account? <a href="login.html">Sign in</a></p>
+      <p class="footer">Welcome to your event management portal. Build an account and start planning with style.</p>
+    </section>
+  </main>
+  <script src="../js/signup.js"></script>
+</body>
+</html>

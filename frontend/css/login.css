@@ -1,0 +1,284 @@
+:root {
+  --accent1: #ff6b6b;
+  --accent2: #6b8bff;
+  --accent3: #ffd36b;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --glass: rgba(255, 255, 255, 0.12);
+  --text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+}
+
+body {
+  background-image: linear-gradient(120deg, rgba(20, 20, 40, 0.55), rgba(10, 60, 40, 0.45)),
+    url("https://pittcc.edu/wp-content/uploads/2023/04/Human-Resources-Management-Background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  display: flex;
+  backdrop-filter: blur(6px);
+}
+
+.left {
+  flex: 1;
+  padding: 40px 44px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+}
+
+.left .hero-img {
+  width: 260px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  display: block;
+  object-fit: cover;
+}
+
+.right {
+  flex: 1.1;
+  padding: 34px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  letter-spacing: -0.2px;
+}
+
+p.lead {
+  margin: 0 0 22px;
+  opacity: 0.95;
+}
+
+ul.features {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 6px;
+}
+
+ul.features li {
+  margin: 10px 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.dot.a {
+  background: linear-gradient(135deg, var(--accent1), #ff9a9a);
+}
+
+.dot.b {
+  background: linear-gradient(135deg, var(--accent2), #8fb1ff);
+}
+
+.dot.c {
+  background: linear-gradient(135deg, var(--accent3), #0ccb65);
+}
+
+/* Form card */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  padding: 26px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+label {
+  font-size: 15px;
+  opacity: 100%;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.28);
+  color: var(--text);
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* role toggle */
+.role-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* hide inline radios when using the prominent switcher */
+.card .role-toggle {
+  display: none;
+}
+
+/* portal switcher placed before sign-in */
+.portal-switch {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.portal-switch button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.portal-switch button.active {
+  background: linear-gradient(90deg, var(--accent2), var(--accent1));
+  color: #10233b;
+}
+
+.role-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+}
+
+.role-toggle input {
+  accent-color: var(--accent2);
+}
+
+/* password visibility button */
+.pw-wrap {
+  position: relative;
+}
+
+.pw-toggle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(16, 101, 205);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.socials button {
+  flex: 1;
+  padding: 9px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.muted {
+  opacity: 100%;
+  font-size: 15px;
+  color: #070707;
+}
+
+.small {
+  font-size: 13px;
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    order: 2;
+    padding: 20px;
+  }
+
+  .right {
+    order: 1;
+    padding: 22px;
+  }
+}

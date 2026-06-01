@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Event — University Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/event.css">
+</head>
+<body >
+  <div class="container" >
+    <div class="card right">
+      <div class="poster-preview">
+        <br><br>
+        <h1>Create an Event</h1>
+        <p>Fill out the details below to add a new event.</p>
+        <form id="eventForm">
+          <div style="margin-top:14px">
+            <label for="title">Event Title</label>
+            <input id="title" name="title" type="text" placeholder="e.g :- Spring Club Fair" required />
+          </div>
+          <div class="row" style="margin-top:14px">
+            <div class="col">
+              <label for="date">Date</label>
+              <input id="date" name="date" type="date" required />
+            </div>
+          </div>
+          <div class="row" style="margin-top:14px">
+            <div class="col">
+              <label for="time">Starting Time</label>
+              <input id="time" name="time" type="time" required />
+            </div>
+
+            <div class="col">
+              <label for="endTime">Finishing Time</label>
+              <input id="endTime" name="endTime" type="time" required />
+            </div>
+          </div>
+          <div style="margin-top:14px">
+            <label for="location">Location</label>
+            <input id="location" name="location" type="text" placeholder="Building / Hall" required />
+          </div>
+          <div style="margin-top:14px">
+            <label for="category">Category</label>
+            <select id="category" name="category">
+              <option>Workshop</option>
+              <option>Seminar</option>
+              <option>Social</option>
+              <option>Competition</option>
+            </select>
+          </div>
+          <div style="margin-top:14px">
+            <label for="desc">Description</label>
+            <textarea placeholder="Short description about the event."></textarea>
+          </div>
+          <div class="row" style="margin-top:14px;align-items:flex-end">
+            <div class="col">
+              <label for="capacity">Capacity</label>
+              <input id="capacity" name="capacity" type="number" min="1" placeholder="Max attendees" />
+            </div>
+            <div class="col">
+              <label for="organizer">Organizer</label>
+              <input id="organizer" name="organizer" type="text" placeholder="Club or person" />
+            </div>
+          </div>
+          <div style="margin-top:14px;display:flex;gap:10px;align-items:center">
+            <button type="submit" class="btn" ><b>Add event</b></button>
+            <button type="button" onclick="window.location.href='login.html'" class="btn" style="background:white;color:#10233b;border:1px solid rgba(255,255,255,0.08)"><b>Cancel</b></button>
+          </div>
+        </form>
+      </div>
+  </div>
+  <div>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/073/745/845/small_2x/wooden-blocks-spelling-events-on-a-blue-surface-representing-event-planning-and-management-creating-a-sense-of-organization-anticipation-and-excitement-for-upcoming-gatherings-and-occasions-free-photo.jpg" height="400" width="450" ></img>
+  </div>
+  
+  <script src="../js/event.js"></script>
+</body>
+</html>
