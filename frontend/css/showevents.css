@@ -1,4 +1,4 @@
-:root {
+ :root {
   --accent1: #ff6b6b;
   --accent2: #6b8bff;
   --accent3: #ffd36b;
@@ -385,4 +385,156 @@ body {
   .hero-visual {
     min-height: 260px;
   }
+}
+
+/* ===== Navigation Bar ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+    box-sizing: border-box;
+
+    background: rgba(20, 20, 40, 0.95);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    background: #6b8bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #4f6dff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(107, 139, 255, 0.4);
+}
+
+.logout-btn {
+    background: #ff6b6b;
+}
+
+.logout-btn:hover {
+    background: #ff4f4f;
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+body {
+    padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ===== Footer ===== */
+
+.footer {
+    background: rgba(20, 20, 40, 0.95);
+    color: white;
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 40px 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #6b8bff;
+}
+
+.footer-section p {
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #6b8bff;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+/* Footer Fix */
+.footer {
+    width: 100%;
+    clear: both;
+    margin-top: 50px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+/* If body uses flex */
+body {
+    display: block !important;
 }
