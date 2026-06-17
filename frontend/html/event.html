@@ -1,13 +1,27 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Add Event — University Events</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/event.css">
 </head>
 <body >
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">
+        Campus Connect
+    </div>
+
+    <div class="nav-buttons">
+        <a href="showevents.html" class="nav-btn">Show Events</a>
+        <a href="login.html" class="nav-btn logout-btn">Logout</a>
+    </div>
+</nav>
+<main class ="content">
   <div class="container" >
     <div class="card right">
       <div class="poster-preview">
@@ -73,7 +87,43 @@
   <div>
     <img src="https://static.vecteezy.com/system/resources/thumbnails/073/745/845/small_2x/wooden-blocks-spelling-events-on-a-blue-surface-representing-event-planning-and-management-creating-a-sense-of-organization-anticipation-and-excitement-for-upcoming-gatherings-and-occasions-free-photo.jpg" height="400" width="450" ></img>
   </div>
-  
+  </main>
   <script src="../js/event.js"></script>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Campus Connect</h3>
+            <p>
+                Campus Connect helps students and organizers discover,
+                create, and manage university events efficiently,
+                making campus engagement easier and more accessible.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="createevent.html">Create Event</a></li>
+                <li><a href="showevents.html">Show Events</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: campusconnect@university.edu</p>
+            <p>Phone: +94 77 123 4567</p>
+            <p>Address: University Campus, Sri Lanka</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Campus Connect. All Rights Reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
