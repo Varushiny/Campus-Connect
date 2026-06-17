@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -8,14 +8,20 @@
   <link rel="stylesheet" href="../css/showevents.css">
 </head>
 <body>
-  <div class="page">
-    <div class="page-header">
-      <div class="brand">
-        <span class="logo">UniEvent</span>
-        <p>Campus events made easy, colorful, and original.</p>
-      </div>
-      <button type="button" onclick="location.href='login.html'">Back to Login</button>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">
+        Campus Connect
     </div>
+
+    <div class="nav-buttons">
+        <a href="event.html" class="nav-btn">Create Event</a>
+        <a href="login.html" class="nav-btn logout-btn">Logout</a>
+    </div>
+</nav>
+
+  
     <section class="hero">
       <div class="hero-text">
         <div class="hero-tag">✨ Event showcase</div>
@@ -70,5 +76,42 @@
   </div>
   <script src="../js/showevents.js"></script>
 </body>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Campus Connect</h3>
+            <p>
+                Campus Connect helps students and organizers discover, create, and manage university events efficiently, making campus engagement easier and more accessible.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="showevents.html">View Events</a></li>
+                <li><a href="event.html">Create Events</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: support@bookshop.com</p>
+            <p>Phone: +94 77 123 4567</p>
+            <p>Address: Colombo, Sri Lanka</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Campus Connect-University Events & Club Management system. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
 </html>
 
